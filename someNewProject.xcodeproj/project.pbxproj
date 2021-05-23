@@ -18,6 +18,7 @@
 		B4B089692652DF930086CF7C /* MyNewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B089682652DF930086CF7C /* MyNewDelegate.swift */; };
 		B4B0896B2652EC940086CF7C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B0896A2652EC940086CF7C /* ThirdViewController.swift */; };
 		B4B0896E2652EE1D0086CF7C /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B0896D2652EE1D0086CF7C /* NotificationNames.swift */; };
+		BD28CCFA265AA03B00AE17AD /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28CCF9265AA03B00AE17AD /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B4B089682652DF930086CF7C /* MyNewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewDelegate.swift; sourceTree = "<group>"; };
 		B4B0896A2652EC940086CF7C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		B4B0896D2652EE1D0086CF7C /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
+		BD28CCF9265AA03B00AE17AD /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				B4B089592652D9960086CF7C /* LaunchScreen.storyboard */,
 				B4B0895C2652D9960086CF7C /* Info.plist */,
 				B4B089622652DA570086CF7C /* MySingleton.swift */,
+				BD28CCF9265AA03B00AE17AD /* Session.swift */,
 			);
 			path = someNewProject;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				B4B0896E2652EE1D0086CF7C /* NotificationNames.swift in Sources */,
 				B4B089662652DD470086CF7C /* SecondViewController.swift in Sources */,
 				B4B089512652D9940086CF7C /* SceneDelegate.swift in Sources */,
+				BD28CCFA265AA03B00AE17AD /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
