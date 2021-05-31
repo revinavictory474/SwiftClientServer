@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4733045DEE15C979682A0A28 /* Pods_someNewProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC6A82737E316CFBDD781D8 /* Pods_someNewProject.framework */; };
 		B4B0894F2652D9940086CF7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B0894E2652D9940086CF7C /* AppDelegate.swift */; };
 		B4B089512652D9940086CF7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B089502652D9940086CF7C /* SceneDelegate.swift */; };
 		B4B089532652D9940086CF7C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B089522652D9940086CF7C /* MainViewController.swift */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8DC6A82737E316CFBDD781D8 /* Pods_someNewProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_someNewProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D182390569BB3C8232338E /* Pods-someNewProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-someNewProject.release.xcconfig"; path = "Target Support Files/Pods-someNewProject/Pods-someNewProject.release.xcconfig"; sourceTree = "<group>"; };
 		B4B0894B2652D9940086CF7C /* someNewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = someNewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B0894E2652D9940086CF7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4B089502652D9940086CF7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		B4B0896A2652EC940086CF7C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		B4B0896D2652EE1D0086CF7C /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
 		BD28CCF9265AA03B00AE17AD /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		F5FD72DC9C76A9972F3AECC8 /* Pods-someNewProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-someNewProject.debug.xcconfig"; path = "Target Support Files/Pods-someNewProject/Pods-someNewProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +47,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4733045DEE15C979682A0A28 /* Pods_someNewProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40B3F6A08E7041ABA9604C00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD72DC9C76A9972F3AECC8 /* Pods-someNewProject.debug.xcconfig */,
+				A4D182390569BB3C8232338E /* Pods-someNewProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9C1D397E7B14AA391B363640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DC6A82737E316CFBDD781D8 /* Pods_someNewProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4B089422652D9940086CF7C = {
 			isa = PBXGroup;
 			children = (
 				B4B0894D2652D9940086CF7C /* someNewProject */,
 				B4B0894C2652D9940086CF7C /* Products */,
+				40B3F6A08E7041ABA9604C00 /* Pods */,
+				9C1D397E7B14AA391B363640 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4B0895F2652D9960086CF7C /* Build configuration list for PBXNativeTarget "someNewProject" */;
 			buildPhases = (
+				12A990369705D44055D760CA /* [CP] Check Pods Manifest.lock */,
 				B4B089472652D9940086CF7C /* Sources */,
 				B4B089482652D9940086CF7C /* Frameworks */,
 				B4B089492652D9940086CF7C /* Resources */,
+				A526C53AC9B44F357A0A3707 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +200,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12A990369705D44055D760CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-someNewProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A526C53AC9B44F357A0A3707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-someNewProject/Pods-someNewProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-someNewProject/Pods-someNewProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-someNewProject/Pods-someNewProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4B089472652D9940086CF7C /* Sources */ = {
@@ -264,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -319,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -331,6 +400,7 @@
 		};
 		B4B089602652D9960086CF7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5FD72DC9C76A9972F3AECC8 /* Pods-someNewProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +411,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.myVKApp1192.course2.heduxar.someNewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -350,6 +421,7 @@
 		};
 		B4B089612652D9960086CF7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D182390569BB3C8232338E /* Pods-someNewProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -360,6 +432,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.myVKApp1192.course2.heduxar.someNewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
